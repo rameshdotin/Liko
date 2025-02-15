@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=keyboard_arrow_right" />
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header-section {
+            background-color: #141c25;
+            padding: 49px 0px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: sans-serif;
+        }
+
+        .navlink-box {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .navlinks {
+            display: flex;
+            align-items: center;
+            gap: 36px;
+            font-size: 16px;
+        }
+
+        .navlinks a {
+            color: #72777d;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            transform: translateY(-100px);
+            opacity: 0;
+
+        }
+
+        .navlinks a:hover {
+            color: #fff;
+        }
+
+        .line-str {
+            width: 1.5px;
+            height: 45px;
+            background-color: #444951;
+            transform: translateY(-100px);
+            opacity: 0;
+        }
+
+        .login-box {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            font-size: 16px;
+            color: white;
+            transform: translateY(-100px);
+            opacity: 0;
+
+        }
+
+        .login-box:hover .material-symbols-outlined {
+            background-color: white;
+            color: black;
+        }
+
+        .login-box .material-symbols-outlined {
+            background-color: #21293e;
+            color: #ffffff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header-section">
+
+        <div class="navlink-box">
+            <div class="navlinks">
+                <a href="#">About Us</a>
+                <a href="#">Cultures</a>
+                <a href="#">Careers</a>
+                <a href="#">Contacts</a>
+                <a href="#">Brevan Howard Digital</a>
+            </div>
+            <div class="line-str"></div>
+            <div class="login-box">
+                <span>Login</span>
+                <span class="material-symbols-outlined">
+                    keyboard_arrow_right
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

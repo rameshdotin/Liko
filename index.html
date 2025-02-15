@@ -23,6 +23,172 @@
    <link rel="stylesheet" href="assets/css/spacing.css">
    <link rel="stylesheet" href="assets/css/custom-animation.css">
    <link rel="stylesheet" href="assets/css/main.css">
+   <link rel="stylesheet"
+   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_downward" />
+
+<style>
+   body {
+       margin: 0;
+       box-sizing: border-box;
+   }
+
+   #main-container-section {
+       height: 100vh;
+       width: 100vw;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background: #141c25;
+       overflow: hidden;
+       position: relative;
+   }
+   .main-logo-svg:hover{
+      cursor: pointer;
+   }
+
+   #main-header {
+       position: absolute;
+       top: 0;
+       right: 0;
+       left: 0;
+       z-index: 1000;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       padding-left: 49px;
+       padding-right: 49px;
+
+   }
+
+   .container-black {
+       background: #141c25;
+       height: 100vh;
+       width: 100vw;
+       position: absolute;
+       top: 0;
+       z-index: 100;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       gap: 15px;
+   }
+
+   .hero-container {
+       position: relative;
+       width: 700px;
+       height: 550px;
+       overflow: hidden;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin-top: 36px;
+   }
+
+   .hero-image {
+       width: 700px;
+       height: 550px;
+       object-fit: cover;
+       position: absolute;
+       bottom: -80px;
+       transform-origin: center;
+   }
+
+   .overlay {
+       width: 100vw;
+       height: 100vh;
+       position: absolute;
+       z-index: 101;
+       top: 0;
+       background-color: rgb(20, 28, 37, 0.65);
+
+   }
+
+   .text-box {
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       position: absolute;
+       z-index: 102;
+       font-size: 75px;
+       word-spacing: 2px;
+       letter-spacing: 2px;
+       font-family: sans-serif;
+       margin: 0 auto;
+       color: white;
+       font-weight: 200;
+       text-align: center;
+       opacity: 0;
+       height: 200px;
+       top: 45%;
+       /* overflow: hidden; */
+   }
+
+   .line {
+       height: 120px;
+       /* overflow: hidden; */
+   }
+
+   .line:nth-child(2) {
+       margin-top: -35px;
+   }
+
+   .container-black div:nth-child(1) {
+       font-size: 24px;
+       word-spacing: 3px;
+       letter-spacing: 2px;
+       font-family: sans-serif;
+       color: white;
+   }
+
+   .container-black div:nth-child(2) {
+       width: 320px;
+       background-color: #000000;
+       height: 3px;
+       border-radius: 20px;
+   }
+
+   .container-black div div:nth-child(1) {
+       width: 0px;
+       background-color: #ffffff;
+       height: 3px;
+       border-radius: 20px;
+   }
+
+   .icon-down {
+       position: absolute;
+       width: 40px;
+       bottom: 60px;
+       z-index: 300;
+       color: white;
+       opacity: 0;
+
+   }
+
+   .icon-down svg {
+       animation: mymove 3s infinite;
+   }
+
+   @keyframes mymove {
+       0% {
+           transform: translateY(0px);
+       }
+
+       50% {
+           transform: translateY(20px);
+       }
+
+       100% {
+           transform: translateY(0px);
+       }
+   }
+
+   #main-container-section-2 {
+       width: 100vw;
+       height: 100vh;
+       background-color: #000000;
+   }
+</style>
 
 </head>
 
@@ -30,7 +196,7 @@
 
 
    <!-- pre loader area start -->
-   <div id="loading" class="preloader-wrap">
+   <!-- <div id="loading" class="preloader-wrap">
       <div class="preloader-2 text-center">
          <span class="line line-1"></span>
          <span class="line line-2"></span>
@@ -43,18 +209,18 @@
          <span class="line line-9"></span>
          <div class="loader-text">Loading ...</div>
       </div>
-   </div>
+   </div> -->
    <!-- pre loader area end -->
 
    <!-- Begin magic cursor  
    ======================== -->
-   <div id="magic-cursor">
+   <!-- <div id="magic-cursor">
       <div id="ball"></div>
-   </div>
+   </div> -->
    <!-- End magic cursor -->
 
    <!-- tp-offcanvus-area-end -->
-   <div class="tp-offcanvas-area">
+   <!-- <div class="tp-offcanvas-area">
       <div class="tp-offcanvas-wrapper">
          <div class="tp-offcanvas-top d-flex align-items-center justify-content-between">
             <div class="tp-offcanvas-logo">
@@ -175,7 +341,7 @@
          </div>
       </div>
    </div>
-   <div class="body-overlay"></div>
+   <div class="body-overlay"></div> -->
    <!-- tp-offcanvus-area-end -->
 
 
@@ -184,7 +350,7 @@
    <header class="tp-header-height">
 
       <!-- header top area start -->
-      <div id="header-sticky" class="tp-header-area tp-header-mob-space tp-transparent pl-60 pr-60 z-index-9">
+      <!-- <div id="header-sticky" class="tp-header-area tp-header-mob-space tp-transparent pl-60 pr-60 z-index-9">
          <div class="container">
             <div class="row align-items-center">
                <div class="col-xl-2 col-lg-2 col-6">
@@ -547,13 +713,13 @@
                </div>
             </div>
          </div>
-      </div>
+      </div> -->
       <!-- header top area end -->
 
    </header>
 
    <!-- Modal -->
-   <div class="modal-wrapper p-relative" data-background="assets/img/home-01/team/team-details-bg.png">
+   <!-- <div class="modal-wrapper p-relative" data-background="assets/img/home-01/team/team-details-bg.png">
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
          <div class="modal-dialog">
             <div class="modal-content">
@@ -561,7 +727,6 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                </div>
                <div class="modal-body">
-                  <!-- team-details area start -->
                   <div class="tm-details-wrapper p-relative">
                      <div class="tm-details-shape-1">
                         <img src="assets/img/home-01/team/team-details-shape-1.png" alt="">
@@ -607,12 +772,11 @@
                         </div>
                      </div>
                   </div>
-                  <!-- team-details area end -->
                </div>
             </div>
          </div>
       </div>
-   </div>
+   </div> -->
    <!-- Modal -->
 
 
@@ -621,8 +785,7 @@
 
          <main>
 
-            <!-- hero area start -->
-            <div class="tp-hero-area tp-hero-ptb main-slider">
+            <!-- <div class="tp-hero-area tp-hero-ptb main-slider">
                <div class="container-fluid">
                   <div class="row justify-content-center">
                      <div class="col-xxl-12">
@@ -657,8 +820,42 @@
                      </div>
                   </div>
                </div>
-            </div>
-            <!-- hero area end -->
+            </div> -->
+           <!-------------------------------Add Herosection------------------------------>
+
+            <div id="main-container-section">
+               <header id="main-header">
+                   <div id="main-logo">
+       
+                   </div>
+                   <div class="main-header-2"></div>
+               </header>
+               <div class="container-black">
+                   <div class="logo"></div>
+                   <div>
+                       <div class="line2"></div>
+                   </div>
+               </div>
+               <div class="text-box" animate>
+                   <span class="line">Macro & Derivatives</span>
+                   <span class="line" animate>Excellence</span>
+               </div>
+       
+               <div class="hero-container">
+                   <div class="overlay"></div>
+                   <img src="https://www.brevanhoward.com/static/ph-home-hero-1efde5d0d12be42e803cbd1420a4bd40.jpg"
+                       alt="Hero Image" class="hero-image">
+               </div>
+               <div class="icon-down">
+                   <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed">
+                       <path d="M446.67-800v513l-240-240L160-480l320 320 320-320-46.67-47-240 240v-513h-66.66Z" />
+                   </svg>
+               </div>
+       
+       
+           </div>
+
+            <!-------------------------------Add Herosection------------------------------>
             <div class="tp-hero-bottom-img-wrap">
                <div class="tp-hero-bottom-img">
                   <video loop="" muted="" autoplay="" playsinline="">
@@ -1261,7 +1458,7 @@
       </div>
    </div>
 
-   <div class="tp-footer-shape-wrap z-index-5 smooth">
+   <!-- <div class="tp-footer-shape-wrap z-index-5 smooth">
       <a href="contact.html">
          <div class="tp-footer-shape p-relative">
             <img class="img-1" src="assets/img/home-01/footer/footer-circle-shape-1.png" alt="">
@@ -1269,7 +1466,7 @@
             <span></span>
          </div>
       </a>
-   </div>
+   </div> -->
 
 
 
@@ -1301,6 +1498,13 @@
    <script src="assets/js/webgl.js"></script>
    <script src="assets/js/main.js"></script>
    <script src="assets/js/tp-cursor.js"></script>
+
+   <!---------------------It mine Javascript ---------------------------->
+   <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+   
+    <script src="./newHomePage.js"></script>
+   <!---------------------It mine Javascript ---------------------------->
 
 
 </body>
