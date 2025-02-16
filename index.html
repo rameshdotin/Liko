@@ -1,138 +1,134 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="zxx">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Liko - Creative agency & portfolio HTML Template</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
 
-<!-- Mirrored from html.hixstudio.net/liko-prev/liko/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Feb 2025 08:26:20 GMT -->
+    <!-- Place favicon.ico in the root directory -->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/favicon.png"
+    />
 
-<head>
-   <meta charset="utf-8">
-   <meta http-equiv="x-ua-compatible" content="ie=edge">
-   <title>Liko - Creative agency & portfolio HTML Template</title>
-   <meta name="description" content="">
-   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
+    <link rel="stylesheet" href="assets/css/spacing.css" />
+    <link rel="stylesheet" href="assets/css/custom-animation.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_downward"
+    />
 
-   <style>
-      @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&display=swap');
-      </style>
-
-   <!-- Place favicon.ico in the root directory -->
-   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
-
-  
-
-   <!-- CSS here -->
-   <link rel="stylesheet" href="assets/css/bootstrap.css">
-   <link rel="stylesheet" href="assets/css/animate.css">
-   <link rel="stylesheet" href="assets/css/swiper-bundle.css">
-   <link rel="stylesheet" href="assets/css/slick.css">
-   <link rel="stylesheet" href="assets/css/magnific-popup.css">
-   <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
-   <link rel="stylesheet" href="assets/css/spacing.css">
-   <link rel="stylesheet" href="assets/css/custom-animation.css">
-   <link rel="stylesheet" href="assets/css/main.css">
-   <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_downward" />
-
-   <style>
+    <style>
       body {
-         margin: 0;
-         box-sizing: border-box;
+        margin: 0;
+        box-sizing: border-box;
       }
 
-     
-
       #main-container-section {
-         height: 100vh;
-         width: 100vw;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         background: #141c25;
-         overflow: hidden;
-         position: relative;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #141c25;
+        overflow: hidden;
+        position: relative;
       }
 
       .main-logo-svg:hover {
-         cursor: pointer;
+        cursor: pointer;
       }
 
       #main-header {
-         position: absolute;
-         top: 0;
-         z-index: 1000;
-         display: flex;
-         align-items: center;
-         justify-content: space-between;
-         padding-left: 49px;
-         padding-right: 49px;
-         width: 100%;
-
+        position: absolute;
+        top: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 49px;
+        padding-right: 49px;
+        width: 100%;
       }
 
       .container-black {
-         background: #141c25;
-         height: 100vh;
-         width: 100vw;
-         position: absolute;
-         top: 0;
-         z-index: 100;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         flex-direction: column;
-         gap: 15px;
+        background: #141c25;
+        height: 100vh;
+        width: 100vw;
+        position: absolute;
+        top: 0;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 15px;
       }
 
       .hero-container {
-         position: relative;
-         width: 700px;
-         height: 550px;
-         overflow: hidden;
-         display: flex;
-         align-items: center;
-         justify-content: center;
-         margin-top: 36px;
+        position: relative;
+        width: 700px;
+        height: 550px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 36px;
       }
 
       .hero-image {
-         width: 100%;
-         height: 550px;
-         object-fit: cover;
-         position: absolute;
-         bottom: -80px;
-         transform-origin: center;
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+        position: absolute;
+        bottom: -80px;
+        transform-origin: center;
       }
 
       .overlay {
-         width: 100vw;
-         height: 100vh;
-         position: absolute;
-         z-index: 101;
-         top: 0;
-         background-color: rgb(20, 28, 37, 0.65);
-
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        z-index: 101;
+        top: 0;
+        background-color: rgb(20, 28, 37, 0.65);
       }
 
       .text-box {
-         width: 100%;
-         display: flex;
-         flex-direction: column;
-         position: absolute;
-         z-index: 102;
-         font-size: 5vw;
-         word-spacing: 2px;
-         letter-spacing: 2px;
-         font-family: "Noto Serif Display", serif;
-         margin: 0 auto;
-         color: white;
-         font-weight: 300;
-         text-align: center;
-         opacity: 0;
-         height: 200px;
-         gap: 45px;
-         top: 45%;
-         
-         /* overflow: hidden; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 102;
+        font-size: 5vw;
+        word-spacing: 2px;
+        letter-spacing: 2px;
+        font-family: "Noto Serif Display", serif;
+        margin: 0 auto;
+        color: white;
+        font-weight: 300;
+        text-align: center;
+        opacity: 0;
+        height: 200px;
+        gap: 45px;
+        top: 45%;
+
+        /* overflow: hidden; */
       }
 
       /* .line {
@@ -145,753 +141,1076 @@
       } */
 
       .container-black div:nth-child(1) {
-         font-size: 24px;
-         word-spacing: 3px;
-         letter-spacing: 2px;
-         font-family: sans-serif;
-         color: white;
+        font-size: 24px;
+        word-spacing: 3px;
+        letter-spacing: 2px;
+        font-family: sans-serif;
+        color: white;
       }
 
       .container-black div:nth-child(2) {
-         width: 320px;
-         background-color: #000000;
-         height: 3px;
-         border-radius: 20px;
+        width: 320px;
+        background-color: #000000;
+        height: 3px;
+        border-radius: 20px;
       }
 
       .container-black div div:nth-child(1) {
-         width: 0px;
-         background-color: #ffffff;
-         height: 3px;
-         border-radius: 20px;
+        width: 0px;
+        background-color: #ffffff;
+        height: 3px;
+        border-radius: 20px;
       }
 
       .icon-down {
-         position: absolute;
-         width: 40px;
-         bottom: 60px;
-         z-index: 300;
-         color: white;
-         opacity: 0;
-
+        position: absolute;
+        width: 40px;
+        bottom: 60px;
+        z-index: 300;
+        color: white;
+        opacity: 0;
       }
 
       .icon-down svg {
-         animation: mymove 3s infinite;
+        animation: mymove 3s infinite;
       }
 
       @keyframes mymove {
-         0% {
-            transform: translateY(0px);
-         }
+        0% {
+          transform: translateY(0px);
+        }
 
-         50% {
-            transform: translateY(20px);
-         }
+        50% {
+          transform: translateY(20px);
+        }
 
-         100% {
-            transform: translateY(0px);
-         }
+        100% {
+          transform: translateY(0px);
+        }
       }
 
       #main-container-section-2 {
-         width: 100vw;
-         height: 100vh;
-         background-color: #000000;
+        width: 100vw;
+        height: 100vh;
+        background-color: #000000;
       }
-   </style>
+    </style>
 
     <!---------it mine csss ---------------->
-    <link rel="stylesheet" href="./responsive.css">
+    <link rel="stylesheet" href="./responsive.css" />
     <!---------it mine csss ---------------->
+  </head>
 
-</head>
-
-<body id="body" class="tp-magic-cursor">
-   <div id="smooth-wrapper">
+  <body id="body" class="tp-magic-cursor">
+    <div id="smooth-wrapper">
       <div id="smooth-content">
+        <main>
+          <!-------------------------------Add Herosection------------------------------>
 
-         <main>
-            <!-------------------------------Add Herosection------------------------------>
+          <div id="main-container-section">
+            <header id="main-header"></header>
+            <div class="container-black">
+              <div class="logo"></div>
+              <div>
+                <div class="line2"></div>
+              </div>
+            </div>
+            <div class="text-box" animate>
+              <span class="line">Macro & Derivatives</span>
+              <span class="line" animate>Excellence</span>
+            </div>
 
-            <div id="main-container-section">
-               <header id="main-header">
-                 
-               </header>
-              <div class="container-black">
-                  <div class="logo"></div>
-                  <div>
-                     <div class="line2"></div>
+            <div class="hero-container">
+              <div class="overlay"></div>
+              <img
+                src="https://www.brevanhoward.com/static/ph-home-hero-1efde5d0d12be42e803cbd1420a4bd40.jpg"
+                alt="Hero Image"
+                class="hero-image"
+              />
+            </div>
+            <div class="icon-down">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="40px"
+                viewBox="0 -960 960 960"
+                width="40px"
+                fill="#e8eaed"
+              >
+                <path
+                  d="M446.67-800v513l-240-240L160-480l320 320 320-320-46.67-47-240 240v-513h-66.66Z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <!-------------------------------Add Herosection------------------------------>
+          <div class="tp-hero-bottom-img-wrap">
+            <div class="tp-hero-bottom-img">
+              <video loop="" muted="" autoplay="" playsinline="">
+                <source
+                  src="https://html.hixstudio.net/videos/liko/liko.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+
+          <!-- brand area start -->
+          <div class="tp-brand-area">
+            <div class="container container-1630">
+              <div class="tp-brand-brd-top tp-brand-ptb">
+                <div class="row align-items-center">
+                  <div class="col-xxl-2 col-xl-3 col-lg-3">
+                    <div class="tp-brand-title-box">
+                      <h4 class="tp-brand-title tp_fade_bottom">
+                        Clients I’ve Worked With
+                      </h4>
+                    </div>
                   </div>
-               </div>
-               <div class="text-box" animate>
-                  <span class="line">Macro & Derivatives</span>
-                  <span class="line" animate>Excellence</span>
-               </div>
-
-               <div class="hero-container">
-                  <div class="overlay"></div>
-                  <img src="https://www.brevanhoward.com/static/ph-home-hero-1efde5d0d12be42e803cbd1420a4bd40.jpg"
-                     alt="Hero Image" class="hero-image">
-               </div>
-               <div class="icon-down">
-                  <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"
-                     fill="#e8eaed">
-                     <path d="M446.67-800v513l-240-240L160-480l320 320 320-320-46.67-47-240 240v-513h-66.66Z" />
-                  </svg>
-               </div> 
-
-
-            </div>
-
-            <!-------------------------------Add Herosection------------------------------>
-            <div class="tp-hero-bottom-img-wrap">
-               <div class="tp-hero-bottom-img">
-                  <video loop="" muted="" autoplay="" playsinline="">
-                     <source src="https://html.hixstudio.net/videos/liko/liko.mp4" type="video/mp4">
-                  </video>
-               </div>
-            </div>
-
-            <!-- brand area start -->
-            <div class="tp-brand-area">
-               <div class="container container-1630">
-                  <div class="tp-brand-brd-top tp-brand-ptb">
-                     <div class="row align-items-center">
-                        <div class="col-xxl-2 col-xl-3 col-lg-3">
-                           <div class="tp-brand-title-box">
-                              <h4 class="tp-brand-title tp_fade_bottom">Clients I’ve Worked With</h4>
-                           </div>
-                        </div>
-                        <div class="col-xxl-10 col-xl-9 col-lg-9">
-                           <div class="row align-items-center">
-                              <div class="col-xl-12">
-                                 <div class="tp-brand-slider-wrapper">
-                                    <div class="swiper-container tp-brand-slider-active fix">
-                                       <div class="swiper-wrapper brand-wrapper">
-                                          <div class="swiper-slide">
-                                             <div class="tp-brand-item">
-                                                <img src="assets/img/home-01/brand/brand-1.png" alt="">
-                                             </div>
-                                          </div>
-                                          <div class="swiper-slide">
-                                             <div class="tp-brand-item">
-                                                <img src="assets/img/home-01/brand/brand-2.png" alt="">
-                                             </div>
-                                          </div>
-                                          <div class="swiper-slide">
-                                             <div class="tp-brand-item">
-                                                <img src="assets/img/home-01/brand/brand-3.png" alt="">
-                                             </div>
-                                          </div>
-                                          <div class="swiper-slide">
-                                             <div class="tp-brand-item">
-                                                <img src="assets/img/home-01/brand/brand-4.png" alt="">
-                                             </div>
-                                          </div>
-                                          <div class="swiper-slide">
-                                             <div class="tp-brand-item">
-                                                <img src="assets/img/home-01/brand/brand-5.png" alt="">
-                                             </div>
-                                          </div>
-                                          <div class="swiper-slide">
-                                             <div class="tp-brand-item">
-                                                <img src="assets/img/home-01/brand/brand-7.png" alt="">
-                                             </div>
-                                          </div>
-                                          <div class="swiper-slide">
-                                             <div class="tp-brand-item">
-                                                <img src="assets/img/home-01/brand/brand-6.png" alt="">
-                                             </div>
-                                          </div>
-                                          <div class="swiper-slide">
-                                             <div class="tp-brand-item">
-                                                <img src="assets/img/home-01/brand/brand-2.png" alt="">
-                                             </div>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
+                  <div class="col-xxl-10 col-xl-9 col-lg-9">
+                    <div class="row align-items-center">
+                      <div class="col-xl-12">
+                        <div class="tp-brand-slider-wrapper">
+                          <div
+                            class="swiper-container tp-brand-slider-active fix"
+                          >
+                            <div class="swiper-wrapper brand-wrapper">
+                              <div class="swiper-slide">
+                                <div class="tp-brand-item">
+                                  <img
+                                    src="assets/img/home-01/brand/brand-1.png"
+                                    alt=""
+                                  />
+                                </div>
                               </div>
-                           </div>
+                              <div class="swiper-slide">
+                                <div class="tp-brand-item">
+                                  <img
+                                    src="assets/img/home-01/brand/brand-2.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="tp-brand-item">
+                                  <img
+                                    src="assets/img/home-01/brand/brand-3.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="tp-brand-item">
+                                  <img
+                                    src="assets/img/home-01/brand/brand-4.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="tp-brand-item">
+                                  <img
+                                    src="assets/img/home-01/brand/brand-5.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="tp-brand-item">
+                                  <img
+                                    src="assets/img/home-01/brand/brand-7.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="tp-brand-item">
+                                  <img
+                                    src="assets/img/home-01/brand/brand-6.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                              <div class="swiper-slide">
+                                <div class="tp-brand-item">
+                                  <img
+                                    src="assets/img/home-01/brand/brand-2.png"
+                                    alt=""
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                     </div>
+                      </div>
+                    </div>
                   </div>
-               </div>
+                </div>
+              </div>
             </div>
-            <!-- brand area end -->
+          </div>
+          <!-- brand area end -->
 
-            <!-- service area start -->
-            <div class="tp-service-area pt-180 pb-80 tp-btn-trigger">
-               <div class="container container-1630">
+          <!-- service area start -->
+          <div class="tp-service-area pt-180 pb-80 tp-btn-trigger">
+            <div class="container container-1630">
+              <div class="row">
+                <div class="col-xl-6 col-lg-6">
+                  <div class="tp-service-title-box p-relative">
+                    <span
+                      class="tp-section-subtitle subtitle-position tp-char-animation"
+                      >I Think a lot</span
+                    >
+                    <h4 class="tp-section-title tp-char-animation">
+                      Thoughtful<br />
+                      <span>Process</span>
+                    </h4>
+                  </div>
+                  <div class="tp-service-left-btn tp-btn-bounce">
+                    <a class="tp-btn-border" href="service.html">
+                      <span class="tp-btn-border-wrap">
+                        <span class="text-1">See All Services</span>
+                        <span class="text-2">See All Services</span>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                  <div class="tp-service-right-wrap">
+                    <div
+                      class="tp-service-item d-flex align-items-start mb-75 tp_fade_bottom"
+                    >
+                      <div class="tp-service-icon">
+                        <img
+                          src="assets/img/home-01/service/service-icon-1.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="tp-service-content">
+                        <h4 class="tp-service-title-sm order-0">
+                          <a href="service-details.html">VIDEO CREATION</a>
+                        </h4>
+                        <p class="order-1">
+                          Dolor magna eget est lorem ipsum dolor sit amet
+                          consectetur. Bibendum est ultricies integer quis
+                          auctor elit sed.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="tp-service-item d-flex align-items-start mb-75 tp_fade_bottom"
+                    >
+                      <div class="tp-service-icon">
+                        <img
+                          src="assets/img/home-01/service/service-icon-2.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="tp-service-content">
+                        <h4 class="tp-service-title-sm">
+                          <a href="service-details.html">ART DIRECTION</a>
+                        </h4>
+                        <p>
+                          Dolor magna eget est lorem ipsum dolor sit amet
+                          consectetur. Bibendum est ultricies integer quis
+                          auctor elit sed.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="tp-service-item d-flex align-items-start mb-75 tp_fade_bottom"
+                    >
+                      <div class="tp-service-icon">
+                        <img
+                          src="assets/img/home-01/service/service-icon-3.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="tp-service-content">
+                        <h4 class="tp-service-title-sm">
+                          <a href="service-details.html">MOTION DESIGN</a>
+                        </h4>
+                        <p>
+                          Dolor magna eget est lorem ipsum dolor sit amet
+                          consectetur. Bibendum est ultricies integer quis
+                          auctor elit sed.
+                        </p>
+                      </div>
+                    </div>
+                    <div
+                      class="tp-service-item d-flex align-items-start mb-75 tp_fade_bottom"
+                    >
+                      <div class="tp-service-icon">
+                        <img
+                          src="assets/img/home-01/service/service-icon-4.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="tp-service-content">
+                        <h4 class="tp-service-title-sm">
+                          <a href="service-details.html">BRAND STRATEGY</a>
+                        </h4>
+                        <p>
+                          Dolor magna eget est lorem ipsum dolor sit amet
+                          consectetur. Bibendum est ultricies integer quis
+                          auctor elit sed.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- service area end -->
+
+          <!-- project area start -->
+          <div class="tp-project-area fix">
+            <div class="container-fluid p-0">
+              <div class="row g-0">
+                <div class="col-xl-12">
+                  <div
+                    class="tp-project-textline tp-project-effect mb-115"
+                    data-scrub="0.0001"
+                  >
+                    <span class="textline-1"
+                      >Co<span
+                        ><img
+                          src="assets/img/home-01/project/project-shape-1-1.png"
+                          alt="" /></span
+                      >lest</span
+                    ><span class="textline-2">Project</span>
+                    <span class="textline-1"
+                      >Co<span
+                        ><img
+                          src="assets/img/home-01/project/project-shape-1-1.png"
+                          alt="" /></span
+                      >lest</span
+                    ><span class="textline-2">Project</span>
+                    <span class="textline-1"
+                      >Co<span
+                        ><img
+                          src="assets/img/home-01/project/project-shape-1-1.png"
+                          alt="" /></span
+                      >lest</span
+                    ><span class="textline-2">Project</span>
+                    <span class="textline-1"
+                      >Co<span
+                        ><img
+                          src="assets/img/home-01/project/project-shape-1-1.png"
+                          alt="" /></span
+                      >lest</span
+                    ><span class="textline-2">Project</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tp-project-gallery-wrapper">
+              <div class="container container-1630">
+                <div class="tp-project-gallery-top pb-50">
                   <div class="row">
-                     <div class="col-xl-6 col-lg-6">
-                        <div class="tp-service-title-box p-relative">
-                           <span class="tp-section-subtitle subtitle-position tp-char-animation">I Think a lot</span>
-                           <h4 class="tp-section-title tp-char-animation">
-                              Thoughtful<br>
-                              <span>Process</span>
-                           </h4>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                      <div class="tp-project-left-wrap">
+                        <div class="tp-project-item tp-project-mr mb-200">
+                          <div
+                            class="tp-project-img height-1 fix not-hide-cursor"
+                            data-cursor="View<br>Demo"
+                          >
+                            <a
+                              class="cursor-hide"
+                              href="portfolio-details-3.html"
+                              ><img
+                                class="w-100"
+                                data-speed=".8"
+                                src="assets/img/home-01/project/project-1-1.jpg"
+                                alt=""
+                            /></a>
+                          </div>
                         </div>
-                        <div class="tp-service-left-btn tp-btn-bounce">
-                           <a class="tp-btn-border" href="service.html">
+                        <div class="tp-project-item text-end mb-200">
+                          <div
+                            class="tp-project-img height-2 d-inline-flex justify-content-end fix not-hide-cursor"
+                            data-cursor="View<br>Demo"
+                          >
+                            <a
+                              class="cursor-hide"
+                              href="portfolio-details-3.html"
+                              ><img
+                                data-speed=".8"
+                                src="assets/img/home-01/project/project-1-2.jpg"
+                                alt=""
+                            /></a>
+                          </div>
+                        </div>
+                        <div class="tp-project-item tp-project-mr mb-200">
+                          <div
+                            class="tp-project-img height-3 fix not-hide-cursor"
+                            data-cursor="View<br>Demo"
+                          >
+                            <a
+                              class="cursor-hide"
+                              href="portfolio-details-3.html"
+                              ><img
+                                class="w-100"
+                                data-speed=".8"
+                                src="assets/img/home-01/project/project-1-3.jpg"
+                                alt=""
+                            /></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                      <div class="tp-project-right-wrap">
+                        <div class="tp-project-item mb-200">
+                          <div
+                            class="tp-project-img height-4 fix not-hide-cursor"
+                            data-cursor="View<br>Demo"
+                          >
+                            <a
+                              class="cursor-hide"
+                              href="portfolio-details-3.html"
+                              ><img
+                                data-speed=".8"
+                                src="assets/img/home-01/project/project-1-4.jpg"
+                                alt=""
+                            /></a>
+                          </div>
+                        </div>
+                        <div class="tp-project-item tp-project-ml mb-200">
+                          <div
+                            class="tp-project-img height-5 fix not-hide-cursor"
+                            data-cursor="View<br>Demo"
+                          >
+                            <a
+                              class="cursor-hide"
+                              href="portfolio-details-3.html"
+                              ><img
+                                data-speed=".8"
+                                src="assets/img/home-01/project/project-1-5.jpg"
+                                alt=""
+                            /></a>
+                          </div>
+                        </div>
+                        <div class="tp-project-item mb-200">
+                          <div
+                            class="tp-project-img height-6 fix not-hide-cursor"
+                            data-cursor="View<br>Demo"
+                          >
+                            <a
+                              class="cursor-hide"
+                              href="portfolio-details-3.html"
+                              ><img
+                                class="w-100"
+                                data-speed=".8"
+                                src="assets/img/home-01/project/project-1-6.jpg"
+                                alt=""
+                            /></a>
+                          </div>
+                        </div>
+                        <div class="tp-project-btn tp-btn-trigger">
+                          <div class="tp-btn-bounce">
+                            <a
+                              class="tp-btn-border"
+                              href="portfolio-grid-col-3.html"
+                            >
                               <span class="tp-btn-border-wrap">
-                                 <span class="text-1">See All Services</span>
-                                 <span class="text-2">See All Services</span>
+                                <span class="text-1">View all projects</span>
+                                <span class="text-2">View all projects</span>
                               </span>
-                           </a>
+                            </a>
+                          </div>
                         </div>
-                     </div>
-                     <div class="col-xl-6 col-lg-6">
-                        <div class="tp-service-right-wrap">
-                           <div class="tp-service-item d-flex align-items-start mb-75 tp_fade_bottom">
-                              <div class="tp-service-icon">
-                                 <img src="assets/img/home-01/service/service-icon-1.png" alt="">
-                              </div>
-                              <div class="tp-service-content">
-                                 <h4 class="tp-service-title-sm order-0"><a href="service-details.html">VIDEO
-                                       CREATION</a></h4>
-                                 <p class="order-1">Dolor magna eget est lorem ipsum dolor sit amet consectetur.
-                                    Bibendum
-                                    est ultricies integer quis auctor elit sed.</p>
-                              </div>
-                           </div>
-                           <div class="tp-service-item d-flex align-items-start mb-75 tp_fade_bottom">
-                              <div class="tp-service-icon">
-                                 <img src="assets/img/home-01/service/service-icon-2.png" alt="">
-                              </div>
-                              <div class="tp-service-content">
-                                 <h4 class="tp-service-title-sm"><a href="service-details.html">ART DIRECTION</a></h4>
-                                 <p>Dolor magna eget est lorem ipsum dolor sit amet consectetur. Bibendum
-                                    est ultricies integer quis auctor elit sed.</p>
-                              </div>
-                           </div>
-                           <div class="tp-service-item d-flex align-items-start mb-75 tp_fade_bottom">
-                              <div class="tp-service-icon">
-                                 <img src="assets/img/home-01/service/service-icon-3.png" alt="">
-                              </div>
-                              <div class="tp-service-content">
-                                 <h4 class="tp-service-title-sm"><a href="service-details.html">MOTION DESIGN</a></h4>
-                                 <p>Dolor magna eget est lorem ipsum dolor sit amet consectetur. Bibendum
-                                    est ultricies integer quis auctor elit sed.</p>
-                              </div>
-                           </div>
-                           <div class="tp-service-item d-flex align-items-start mb-75 tp_fade_bottom">
-                              <div class="tp-service-icon">
-                                 <img src="assets/img/home-01/service/service-icon-4.png" alt="">
-                              </div>
-                              <div class="tp-service-content">
-                                 <h4 class="tp-service-title-sm"><a href="service-details.html">BRAND STRATEGY</a></h4>
-                                 <p>Dolor magna eget est lorem ipsum dolor sit amet consectetur. Bibendum
-                                    est ultricies integer quis auctor elit sed.</p>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+                      </div>
+                    </div>
                   </div>
-               </div>
+                </div>
+              </div>
+              <div class="container-fluid p-0">
+                <div class="row g-0">
+                  <div class="col-xl-12">
+                    <div class="tp-project-full-img-wrap p-relative fix">
+                      <div
+                        class="tp-project-full-img"
+                        data-speed="auto"
+                        data-background="assets/img/inner-service/hero/hero-1-2.jpg"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <!-- service area end -->
+          </div>
+          <!-- project area end -->
 
-            <!-- project area start -->
-            <div class="tp-project-area fix">
-               <div class="container-fluid p-0">
-                  <div class="row g-0">
-                     <div class="col-xl-12">
-                        <div class="tp-project-textline tp-project-effect mb-115" data-scrub="0.0001">
-                           <span class="textline-1">Co<span><img src="assets/img/home-01/project/project-shape-1-1.png"
-                                    alt=""></span>lest</span><span class="textline-2">Project</span>
-                           <span class="textline-1">Co<span><img src="assets/img/home-01/project/project-shape-1-1.png"
-                                    alt=""></span>lest</span><span class="textline-2">Project</span>
-                           <span class="textline-1">Co<span><img src="assets/img/home-01/project/project-shape-1-1.png"
-                                    alt=""></span>lest</span><span class="textline-2">Project</span>
-                           <span class="textline-1">Co<span><img src="assets/img/home-01/project/project-shape-1-1.png"
-                                    alt=""></span>lest</span><span class="textline-2">Project</span>
-                        </div>
-                     </div>
+          <!-- award area start -->
+          <div class="tp-award-area pt-125 pb-125">
+            <div class="container container-1630">
+              <div class="row">
+                <div class="col-xxl-6 col-xl-7">
+                  <div class="tp-award-title-box">
+                    <h4 class="tp-section-title tp-char-animation">
+                      Awards <br />
+                      <span>& Recognitions</span>
+                    </h4>
                   </div>
-               </div>
-               <div class="tp-project-gallery-wrapper">
-                  <div class="container container-1630">
-                     <div class="tp-project-gallery-top pb-50">
-                        <div class="row">
-                           <div class="col-xl-6 col-lg-6 col-md-6">
-                              <div class="tp-project-left-wrap">
-                                 <div class="tp-project-item tp-project-mr mb-200">
-                                    <div class="tp-project-img height-1 fix not-hide-cursor" data-cursor="View<br>Demo">
-                                       <a class="cursor-hide" href="portfolio-details-3.html"><img class="w-100"
-                                             data-speed=".8" src="assets/img/home-01/project/project-1-1.jpg"
-                                             alt=""></a>
-                                    </div>
-                                 </div>
-                                 <div class="tp-project-item text-end mb-200">
-                                    <div
-                                       class="tp-project-img height-2 d-inline-flex justify-content-end fix not-hide-cursor"
-                                       data-cursor="View<br>Demo">
-                                       <a class="cursor-hide" href="portfolio-details-3.html"><img data-speed=".8"
-                                             src="assets/img/home-01/project/project-1-2.jpg" alt=""></a>
-                                    </div>
-                                 </div>
-                                 <div class="tp-project-item tp-project-mr mb-200">
-                                    <div class="tp-project-img height-3 fix not-hide-cursor" data-cursor="View<br>Demo">
-                                       <a class="cursor-hide" href="portfolio-details-3.html"><img class="w-100"
-                                             data-speed=".8" src="assets/img/home-01/project/project-1-3.jpg"
-                                             alt=""></a>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="col-xl-6 col-lg-6 col-md-6">
-                              <div class="tp-project-right-wrap">
-                                 <div class="tp-project-item mb-200">
-                                    <div class="tp-project-img height-4 fix not-hide-cursor" data-cursor="View<br>Demo">
-                                       <a class="cursor-hide" href="portfolio-details-3.html"><img data-speed=".8"
-                                             src="assets/img/home-01/project/project-1-4.jpg" alt=""></a>
-                                    </div>
-                                 </div>
-                                 <div class="tp-project-item tp-project-ml mb-200">
-                                    <div class="tp-project-img height-5 fix not-hide-cursor" data-cursor="View<br>Demo">
-                                       <a class="cursor-hide" href="portfolio-details-3.html"><img data-speed=".8"
-                                             src="assets/img/home-01/project/project-1-5.jpg" alt=""></a>
-                                    </div>
-                                 </div>
-                                 <div class="tp-project-item mb-200">
-                                    <div class="tp-project-img height-6 fix not-hide-cursor" data-cursor="View<br>Demo">
-                                       <a class="cursor-hide" href="portfolio-details-3.html"><img class="w-100"
-                                             data-speed=".8" src="assets/img/home-01/project/project-1-6.jpg"
-                                             alt=""></a>
-                                    </div>
-                                 </div>
-                                 <div class="tp-project-btn tp-btn-trigger">
-                                    <div class="tp-btn-bounce">
-                                       <a class="tp-btn-border" href="portfolio-grid-col-3.html">
-                                          <span class="tp-btn-border-wrap">
-                                             <span class="text-1">View all projects</span>
-                                             <span class="text-2">View all projects</span>
-                                          </span>
-                                       </a>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-12">
+                  <div class="tp-award-list-thumb-wrap p-relative">
+                    <div id="tp-award-thumb" class="tp-award-list-thumb-1">
+                      <img
+                        class="tp-award-list-thumb-1"
+                        src="assets/img/home-01/award/award-1.png"
+                        alt=""
+                      />
+                      <img
+                        class="tp-award-list-thumb-2"
+                        src="assets/img/home-01/award/award-2.png"
+                        alt=""
+                      />
+                      <img
+                        class="tp-award-list-thumb-3"
+                        src="assets/img/home-01/award/award-3.png"
+                        alt=""
+                      />
+                      <img
+                        class="tp-award-list-thumb-4"
+                        src="assets/img/home-01/award/award-4.png"
+                        alt=""
+                      />
+                      <img
+                        class="tp-award-list-thumb-5"
+                        src="assets/img/home-01/award/award-5.png"
+                        alt=""
+                      />
+                      <img
+                        class="tp-award-list-thumb-6"
+                        src="assets/img/home-01/award/award-6.png"
+                        alt=""
+                      />
+                    </div>
                   </div>
-                  <div class="container-fluid p-0">
-                     <div class="row g-0">
-                        <div class="col-xl-12">
-                           <div class="tp-project-full-img-wrap p-relative fix">
-                              <div class="tp-project-full-img" data-speed="auto"
-                                 data-background="assets/img/inner-service/hero/hero-1-2.jpg"></div>
-                           </div>
-                        </div>
-                     </div>
+                </div>
+                <div class="col-xl-8 col-lg-8 col-md-12">
+                  <div class="tp-award-list-wrap">
+                    <div
+                      class="tp-award-list-item d-flex align-items-center justify-content-between active tp_fade_bottom"
+                      rel="tp-award-list-thumb-1"
+                    >
+                      <div
+                        class="tp-award-list-content-left d-flex align-items-center"
+                      >
+                        <span>x2</span>
+                        <p>FWA, Site of the Day</p>
+                      </div>
+                      <div class="tp-award-list-content-right">
+                        <span>Jun 24, 2024</span>
+                      </div>
+                    </div>
+                    <div
+                      class="tp-award-list-item d-flex align-items-center justify-content-between tp_fade_bottom"
+                      rel="tp-award-list-thumb-2"
+                    >
+                      <div
+                        class="tp-award-list-content-left d-flex align-items-center"
+                      >
+                        <span>x3</span>
+                        <p>Awwwards Interior Excellence</p>
+                      </div>
+                      <div class="tp-award-list-content-right">
+                        <span>Nov 24, 2022</span>
+                      </div>
+                    </div>
+                    <div
+                      class="tp-award-list-item d-flex align-items-center justify-content-between tp_fade_bottom"
+                      rel="tp-award-list-thumb-3"
+                    >
+                      <div
+                        class="tp-award-list-content-left d-flex align-items-center"
+                      >
+                        <span>x1</span>
+                        <p>Loki boundary pushing year in Review 2022</p>
+                      </div>
+                      <div class="tp-award-list-content-right">
+                        <span>Jun 11, 2012</span>
+                      </div>
+                    </div>
+                    <div
+                      class="tp-award-list-item d-flex align-items-center justify-content-between tp_fade_bottom"
+                      rel="tp-award-list-thumb-4"
+                    >
+                      <div
+                        class="tp-award-list-content-left d-flex align-items-center"
+                      >
+                        <span>x2</span>
+                        <p>The New Liko Tools Website is Live.</p>
+                      </div>
+                      <div class="tp-award-list-content-right">
+                        <span>Sep 26, 2021</span>
+                      </div>
+                    </div>
+                    <div
+                      class="tp-award-list-item d-flex align-items-center justify-content-between tp_fade_bottom"
+                      rel="tp-award-list-thumb-5"
+                    >
+                      <div
+                        class="tp-award-list-content-left d-flex align-items-center"
+                      >
+                        <span>x2</span>
+                        <p>Digital Agencies Worldwide</p>
+                      </div>
+                      <div class="tp-award-list-content-right">
+                        <span>Jun 24, 2021</span>
+                      </div>
+                    </div>
+                    <div
+                      class="tp-award-list-item d-flex align-items-center justify-content-between tp_fade_bottom"
+                      rel="tp-award-list-thumb-6"
+                    >
+                      <div
+                        class="tp-award-list-content-left d-flex align-items-center"
+                      >
+                        <span>x1</span>
+                        <p>FWA, Site of the Day</p>
+                      </div>
+                      <div class="tp-award-list-content-right">
+                        <span>Aug 21, 2021</span>
+                      </div>
+                    </div>
                   </div>
-               </div>
+                </div>
+              </div>
             </div>
-            <!-- project area end -->
+          </div>
+          <!-- award area end -->
 
-            <!-- award area start -->
-            <div class="tp-award-area pt-125 pb-125">
-               <div class="container container-1630">
-                  <div class="row">
-                     <div class="col-xxl-6 col-xl-7">
-                        <div class="tp-award-title-box">
-                           <h4 class="tp-section-title tp-char-animation">Awards <br> <span>& Recognitions</span></h4>
+          <!-- team area start -->
+          <div class="tp-team-area pt-20 pb-120 fix">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-xl-12">
+                  <div class="tp-team-slider-wrapper">
+                    <div class="swiper-container tp-team-slider-active">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div
+                            class="tp-team-item tp-hover-btn-wrapper marque fix mb-30"
+                          >
+                            <div class="tp-hover-btn-item">
+                              <img
+                                src="assets/img/home-01/team/team-1-1.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="tp-team-content">
+                              <span>Art direction</span>
+                              <h4
+                                class="tp-team-title-sm"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
+                              >
+                                <a href="void:javascript(0)">JANE MILLS</a>
+                              </h4>
+                            </div>
+                          </div>
                         </div>
-                     </div>
+                        <div class="swiper-slide">
+                          <div
+                            class="tp-team-item tp-hover-btn-wrapper marque fix mb-30"
+                          >
+                            <div class="tp-hover-btn-item">
+                              <img
+                                src="assets/img/home-01/team/team-1-2.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="tp-team-content">
+                              <span>Art direction</span>
+                              <h4
+                                class="tp-team-title-sm"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
+                              >
+                                <a href="void:javascript(0)">JIMathis</a>
+                              </h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div
+                            class="tp-team-item tp-hover-btn-wrapper marque fix mb-30"
+                          >
+                            <div class="tp-hover-btn-item">
+                              <img
+                                src="assets/img/home-01/team/team-1-3.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="tp-team-content">
+                              <span>Art direction</span>
+                              <h4
+                                class="tp-team-title-sm"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
+                              >
+                                <a href="void:javascript(0)">Randolph</a>
+                              </h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div
+                            class="tp-team-item tp-hover-btn-wrapper marque fix mb-30"
+                          >
+                            <div class="tp-hover-btn-item">
+                              <img
+                                src="assets/img/home-01/team/team-1-4.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="tp-team-content">
+                              <span>Art direction</span>
+                              <h4
+                                class="tp-team-title-sm"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
+                              >
+                                <a href="void:javascript(0)">Mullins</a>
+                              </h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div
+                            class="tp-team-item tp-hover-btn-wrapper marque fix mb-30"
+                          >
+                            <div class="tp-hover-btn-item">
+                              <img
+                                src="assets/img/home-01/team/team-1-5.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="tp-team-content">
+                              <span>Art direction</span>
+                              <h4
+                                class="tp-team-title-sm"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
+                              >
+                                <a href="void:javascript(0)">Minor</a>
+                              </h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div
+                            class="tp-team-item tp-hover-btn-wrapper marque fix mb-30"
+                          >
+                            <div class="tp-hover-btn-item">
+                              <img
+                                src="assets/img/home-01/team/team-1-2.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="tp-team-content">
+                              <span>Art direction</span>
+                              <h4
+                                class="tp-team-title-sm"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
+                              >
+                                <a href="void:javascript(0)">Lucas</a>
+                              </h4>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div
+                            class="tp-team-item tp-hover-btn-wrapper marque fix mb-30"
+                          >
+                            <div class="tp-hover-btn-item">
+                              <img
+                                src="assets/img/home-01/team/team-1-3.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="tp-team-content">
+                              <span>Art direction</span>
+                              <h4
+                                class="tp-team-title-sm"
+                                data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"
+                              >
+                                <a href="void:javascript(0)">JDeborah</a>
+                              </h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="row">
-                     <div class="col-xl-4 col-lg-4 col-md-12">
-                        <div class="tp-award-list-thumb-wrap p-relative">
-                           <div id="tp-award-thumb" class="tp-award-list-thumb-1">
-                              <img class="tp-award-list-thumb-1" src="assets/img/home-01/award/award-1.png" alt="">
-                              <img class="tp-award-list-thumb-2" src="assets/img/home-01/award/award-2.png" alt="">
-                              <img class="tp-award-list-thumb-3" src="assets/img/home-01/award/award-3.png" alt="">
-                              <img class="tp-award-list-thumb-4" src="assets/img/home-01/award/award-4.png" alt="">
-                              <img class="tp-award-list-thumb-5" src="assets/img/home-01/award/award-5.png" alt="">
-                              <img class="tp-award-list-thumb-6" src="assets/img/home-01/award/award-6.png" alt="">
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-xl-8 col-lg-8 col-md-12">
-                        <div class="tp-award-list-wrap">
-                           <div
-                              class="tp-award-list-item d-flex align-items-center justify-content-between active tp_fade_bottom"
-                              rel="tp-award-list-thumb-1">
-                              <div class="tp-award-list-content-left d-flex align-items-center">
-                                 <span>x2</span>
-                                 <p>FWA, Site of the Day</p>
-                              </div>
-                              <div class="tp-award-list-content-right">
-                                 <span>Jun 24, 2024</span>
-                              </div>
-                           </div>
-                           <div
-                              class="tp-award-list-item d-flex align-items-center justify-content-between tp_fade_bottom"
-                              rel="tp-award-list-thumb-2">
-                              <div class="tp-award-list-content-left d-flex align-items-center">
-                                 <span>x3</span>
-                                 <p>Awwwards Interior Excellence</p>
-                              </div>
-                              <div class="tp-award-list-content-right">
-                                 <span>Nov 24, 2022</span>
-                              </div>
-                           </div>
-                           <div
-                              class="tp-award-list-item d-flex align-items-center justify-content-between tp_fade_bottom"
-                              rel="tp-award-list-thumb-3">
-                              <div class="tp-award-list-content-left d-flex align-items-center">
-                                 <span>x1</span>
-                                 <p>Loki boundary pushing year in Review 2022</p>
-                              </div>
-                              <div class="tp-award-list-content-right">
-                                 <span>Jun 11, 2012</span>
-                              </div>
-                           </div>
-                           <div
-                              class="tp-award-list-item d-flex align-items-center justify-content-between tp_fade_bottom"
-                              rel="tp-award-list-thumb-4">
-                              <div class="tp-award-list-content-left d-flex align-items-center">
-                                 <span>x2</span>
-                                 <p>The New Liko Tools Website is Live.</p>
-                              </div>
-                              <div class="tp-award-list-content-right">
-                                 <span>Sep 26, 2021</span>
-                              </div>
-                           </div>
-                           <div
-                              class="tp-award-list-item d-flex align-items-center justify-content-between tp_fade_bottom"
-                              rel="tp-award-list-thumb-5">
-                              <div class="tp-award-list-content-left d-flex align-items-center">
-                                 <span>x2</span>
-                                 <p>Digital Agencies Worldwide</p>
-                              </div>
-                              <div class="tp-award-list-content-right">
-                                 <span>Jun 24, 2021</span>
-                              </div>
-                           </div>
-                           <div
-                              class="tp-award-list-item d-flex align-items-center justify-content-between tp_fade_bottom"
-                              rel="tp-award-list-thumb-6">
-                              <div class="tp-award-list-content-left d-flex align-items-center">
-                                 <span>x1</span>
-                                 <p>FWA, Site of the Day</p>
-                              </div>
-                              <div class="tp-award-list-content-right">
-                                 <span>Aug 21, 2021</span>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+                </div>
+              </div>
             </div>
-            <!-- award area end -->
+          </div>
+          <!-- team area end -->
 
-            <!-- team area start -->
-            <div class="tp-team-area  pt-20 pb-120 fix">
-               <div class="container-fluid">
-                  <div class="row">
-                     <div class="col-xl-12">
-                        <div class="tp-team-slider-wrapper">
-                           <div class="swiper-container tp-team-slider-active">
-                              <div class="swiper-wrapper">
-                                 <div class="swiper-slide">
-                                    <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                       <div class="tp-hover-btn-item">
-                                          <img src="assets/img/home-01/team/team-1-1.jpg" alt="">
-                                       </div>
-                                       <div class="tp-team-content">
-                                          <span>Art direction</span>
-                                          <h4 class="tp-team-title-sm" data-bs-toggle="modal"
-                                             data-bs-target="#exampleModal"><a href="void:javascript(0)">JANE MILLS</a>
-                                          </h4>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="swiper-slide">
-                                    <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                       <div class="tp-hover-btn-item">
-                                          <img src="assets/img/home-01/team/team-1-2.jpg" alt="">
-                                       </div>
-                                       <div class="tp-team-content">
-                                          <span>Art direction</span>
-                                          <h4 class="tp-team-title-sm" data-bs-toggle="modal"
-                                             data-bs-target="#exampleModal"><a href="void:javascript(0)">JIMathis</a>
-                                          </h4>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="swiper-slide">
-                                    <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                       <div class="tp-hover-btn-item">
-                                          <img src="assets/img/home-01/team/team-1-3.jpg" alt="">
-                                       </div>
-                                       <div class="tp-team-content">
-                                          <span>Art direction</span>
-                                          <h4 class="tp-team-title-sm" data-bs-toggle="modal"
-                                             data-bs-target="#exampleModal"><a href="void:javascript(0)">Randolph</a>
-                                          </h4>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="swiper-slide">
-                                    <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                       <div class="tp-hover-btn-item">
-                                          <img src="assets/img/home-01/team/team-1-4.jpg" alt="">
-                                       </div>
-                                       <div class="tp-team-content">
-                                          <span>Art direction</span>
-                                          <h4 class="tp-team-title-sm" data-bs-toggle="modal"
-                                             data-bs-target="#exampleModal"><a href="void:javascript(0)">Mullins</a>
-                                          </h4>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="swiper-slide">
-                                    <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                       <div class="tp-hover-btn-item">
-                                          <img src="assets/img/home-01/team/team-1-5.jpg" alt="">
-                                       </div>
-                                       <div class="tp-team-content">
-                                          <span>Art direction</span>
-                                          <h4 class="tp-team-title-sm" data-bs-toggle="modal"
-                                             data-bs-target="#exampleModal"><a href="void:javascript(0)">Minor</a></h4>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="swiper-slide">
-                                    <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                       <div class="tp-hover-btn-item">
-                                          <img src="assets/img/home-01/team/team-1-2.jpg" alt="">
-                                       </div>
-                                       <div class="tp-team-content">
-                                          <span>Art direction</span>
-                                          <h4 class="tp-team-title-sm" data-bs-toggle="modal"
-                                             data-bs-target="#exampleModal"><a href="void:javascript(0)">Lucas</a></h4>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="swiper-slide">
-                                    <div class="tp-team-item tp-hover-btn-wrapper marque fix mb-30">
-                                       <div class="tp-hover-btn-item">
-                                          <img src="assets/img/home-01/team/team-1-3.jpg" alt="">
-                                       </div>
-                                       <div class="tp-team-content">
-                                          <span>Art direction</span>
-                                          <h4 class="tp-team-title-sm" data-bs-toggle="modal"
-                                             data-bs-target="#exampleModal"><a href="void:javascript(0)">JDeborah</a>
-                                          </h4>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
+          <!-- testimonial area start -->
+          <div class="tp-testimonial-area pb-120">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-xl-10">
+                  <div class="tp-testimonial-slider-wrapper p-relative">
+                    <div class="tp-testimonial-arrow-box d-none d-lg-block">
+                      <button class="tp-testimonial-prev">
+                        <span>
+                          <svg
+                            width="20"
+                            height="17"
+                            viewBox="0 0 20 17"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M19.3335 8.63672H1.3335"
+                              stroke="currentcolor"
+                              stroke-width="1.5"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M8.42188 0.69043C8.42188 5.08274 4.65513 8.63691 0.000114646 8.63691"
+                              stroke="currentcolor"
+                              stroke-width="1.5"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M0.000114646 8.63672C4.65513 8.63672 8.42188 12.1909 8.42188 16.5832"
+                              stroke="currentcolor"
+                              stroke-width="1.5"
+                              stroke-miterlimit="10"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                      <button class="tp-testimonial-next">
+                        <span>
+                          <svg
+                            width="20"
+                            height="16"
+                            viewBox="0 0 20 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M0.666504 8H18.6665"
+                              stroke="currentcolor"
+                              stroke-width="1.5"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M11.5781 0C11.5781 4.42189 15.3449 8 19.9999 8"
+                              stroke="currentcolor"
+                              stroke-width="1.5"
+                              stroke-miterlimit="10"
+                            />
+                            <path
+                              d="M19.9999 8C15.3449 8 11.5781 11.5781 11.5781 16"
+                              stroke="currentcolor"
+                              stroke-width="1.5"
+                              stroke-miterlimit="10"
+                            />
+                          </svg>
+                        </span>
+                      </button>
+                    </div>
+                    <div
+                      class="swiper-container tp-testimonial-slider-active fix"
+                    >
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="tp-testimonial-item text-center">
+                            <p>
+                              “Nulla ut enim non magna placerat scelerisque sed
+                              eu dolor. Sed eu faucibus turpis. Ut bibendum
+                              tempor tempus. Ut scelerisque est posuere ex
+                              pretium laoreet.”
+                            </p>
+                            <span><em>Louis Fantun</em> - Designer</span>
+                          </div>
                         </div>
-                     </div>
+                        <div class="swiper-slide">
+                          <div class="tp-testimonial-item text-center">
+                            <p>
+                              “Nulla ut enim non magna placerat scelerisque sed
+                              eu dolor. Sed eu faucibus turpis. Ut bibendum
+                              tempor tempus. Ut scelerisque est posuere ex
+                              pretium laoreet.”
+                            </p>
+                            <span><em>Louis Fantun</em> - Designer</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-               </div>
+                </div>
+              </div>
             </div>
-            <!-- team area end -->
+          </div>
+          <!-- testimonial area end -->
+        </main>
 
-            <!-- testimonial area start -->
-            <div class="tp-testimonial-area pb-120">
-               <div class="container">
-                  <div class="row justify-content-center">
-                     <div class="col-xl-10">
-                        <div class="tp-testimonial-slider-wrapper p-relative">
-                           <div class="tp-testimonial-arrow-box d-none d-lg-block">
-                              <button class="tp-testimonial-prev">
-                                 <span>
-                                    <svg width="20" height="17" viewBox="0 0 20 17" fill="none"
-                                       xmlns="http://www.w3.org/2000/svg">
-                                       <path d="M19.3335 8.63672H1.3335" stroke="currentcolor" stroke-width="1.5"
-                                          stroke-miterlimit="10" />
-                                       <path d="M8.42188 0.69043C8.42188 5.08274 4.65513 8.63691 0.000114646 8.63691"
-                                          stroke="currentcolor" stroke-width="1.5" stroke-miterlimit="10" />
-                                       <path d="M0.000114646 8.63672C4.65513 8.63672 8.42188 12.1909 8.42188 16.5832"
-                                          stroke="currentcolor" stroke-width="1.5" stroke-miterlimit="10" />
-                                    </svg>
-                                 </span>
-                              </button>
-                              <button class="tp-testimonial-next">
-                                 <span>
-                                    <svg width="20" height="16" viewBox="0 0 20 16" fill="none"
-                                       xmlns="http://www.w3.org/2000/svg">
-                                       <path d="M0.666504 8H18.6665" stroke="currentcolor" stroke-width="1.5"
-                                          stroke-miterlimit="10" />
-                                       <path d="M11.5781 0C11.5781 4.42189 15.3449 8 19.9999 8" stroke="currentcolor"
-                                          stroke-width="1.5" stroke-miterlimit="10" />
-                                       <path d="M19.9999 8C15.3449 8 11.5781 11.5781 11.5781 16" stroke="currentcolor"
-                                          stroke-width="1.5" stroke-miterlimit="10" />
-                                    </svg>
-                                 </span>
-                              </button>
-                           </div>
-                           <div class="swiper-container tp-testimonial-slider-active fix">
-                              <div class="swiper-wrapper">
-                                 <div class="swiper-slide">
-                                    <div class="tp-testimonial-item text-center">
-                                       <p>
-                                          “Nulla ut enim non magna placerat scelerisque sed eu dolor. Sed eu faucibus
-                                          turpis.
-                                          Ut bibendum tempor tempus. Ut scelerisque est
-                                          posuere ex pretium laoreet.”
-                                       </p>
-                                       <span><em>Louis Fantun</em> - Designer</span>
-                                    </div>
-                                 </div>
-                                 <div class="swiper-slide">
-                                    <div class="tp-testimonial-item text-center">
-                                       <p>
-                                          “Nulla ut enim non magna placerat scelerisque sed eu dolor. Sed eu faucibus
-                                          turpis.
-                                          Ut bibendum tempor tempus. Ut scelerisque est
-                                          posuere ex pretium laoreet.”
-                                       </p>
-                                       <span><em>Louis Fantun</em> - Designer</span>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+        <footer>
+          <!-- footer area start -->
+          <div class="tp-footer-area black-bg pt-90">
+            <div class="container-fluid">
+              <div class="tp-footer-wrap">
+                <div class="row align-items-end">
+                  <div class="col-xl-5 col-lg-6">
+                    <div class="tp-footer-menu menu-anim">
+                      <ul class="counter-row tp-text-anim">
+                        <li class="active">
+                          <a href="portfolio-details-1.html">Projects</a>
+                        </li>
+                        <li class="active">
+                          <a href="service.html">What we do</a>
+                        </li>
+                        <li class="active">
+                          <a href="about-us.html">About</a>
+                        </li>
+                        <li class="active">
+                          <a href="blog-modern.html">Blog</a>
+                        </li>
+                        <li class="active">
+                          <a href="contact.html">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
-               </div>
+                  <div class="col-xl-5 col-lg-6">
+                    <div class="tp-footer-middle-wrap">
+                      <div class="tp-footer-content">
+                        <h4 class="tp-footer-big-title footer-big-text">
+                          Let's Contact!
+                        </h4>
+                      </div>
+                      <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6">
+                          <div class="tp-footer-widget">
+                            <h4 class="tp-footer-title tp_fade_bottom">
+                              Say hello at:
+                            </h4>
+                            <div class="tp-footer-widget-info">
+                              <div
+                                class="tp-footer-widget-info-mail tp_fade_bottom"
+                              >
+                                <a href="mailto:contact@agency.com"
+                                  >contact@agency.com</a
+                                >
+                              </div>
+                              <div
+                                class="tp-footer-widget-info-location tp_fade_bottom"
+                              >
+                                <a
+                                  href="https://www.google.com/maps/@54.581385,-101.7562167,7.5z?entry=ttu"
+                                  target="_blank"
+                                  >389 Street St. <br />
+                                  San Francisco,CA</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6">
+                          <div class="tp-footer-widget">
+                            <h4 class="tp-footer-title tp_fade_bottom">
+                              Stalk us
+                            </h4>
+                            <ul class="tp-footer-widget-social">
+                              <li class="tp_fade_bottom">
+                                <a href="#">Facebook</a>
+                              </li>
+                              <li class="tp_fade_bottom">
+                                <a href="#">Instagram</a>
+                              </li>
+                              <li class="tp_fade_bottom">
+                                <a href="#">Behance</a>
+                              </li>
+                              <li class="tp_fade_bottom">
+                                <a href="#">Dribbble</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <!-- testimonial area end -->
+            <!-- footer area end -->
 
-         </main>
-
-         <footer>
-
-            <!-- footer area start -->
-            <div class="tp-footer-area black-bg pt-90">
-               <div class="container-fluid">
-                  <div class="tp-footer-wrap">
-                     <div class="row align-items-end">
-                        <div class="col-xl-5 col-lg-6">
-                           <div class="tp-footer-menu menu-anim">
-                              <ul class="counter-row tp-text-anim">
-                                 <li class="active"><a href="portfolio-details-1.html">Projects</a></li>
-                                 <li class="active"><a href="service.html">What we do</a></li>
-                                 <li class="active"><a href="about-us.html">About</a></li>
-                                 <li class="active"><a href="blog-modern.html">Blog</a></li>
-                                 <li class="active"><a href="contact.html">Contact</a></li>
-                              </ul>
-                           </div>
-                        </div>
-                        <div class="col-xl-5 col-lg-6">
-                           <div class="tp-footer-middle-wrap">
-                              <div class="tp-footer-content">
-                                 <h4 class="tp-footer-big-title footer-big-text">Let's Contact!</h4>
-                              </div>
-                              <div class="row">
-                                 <div class="col-xl-6 col-lg-6 col-md-6">
-                                    <div class="tp-footer-widget">
-                                       <h4 class="tp-footer-title tp_fade_bottom">Say hello at:</h4>
-                                       <div class="tp-footer-widget-info">
-                                          <div class="tp-footer-widget-info-mail tp_fade_bottom">
-                                             <a href="mailto:contact@agency.com">contact@agency.com</a>
-                                          </div>
-                                          <div class="tp-footer-widget-info-location tp_fade_bottom">
-                                             <a href="https://www.google.com/maps/@54.581385,-101.7562167,7.5z?entry=ttu"
-                                                target="_blank">389 Street St. <br> San Francisco,CA</a>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="col-xl-6 col-lg-6 col-md-6">
-                                    <div class="tp-footer-widget">
-                                       <h4 class="tp-footer-title tp_fade_bottom">Stalk us</h4>
-                                       <ul class="tp-footer-widget-social">
-                                          <li class="tp_fade_bottom"><a href="#">Facebook</a></li>
-                                          <li class="tp_fade_bottom"><a href="#">Instagram</a></li>
-                                          <li class="tp_fade_bottom"><a href="#">Behance</a></li>
-                                          <li class="tp_fade_bottom"><a href="#">Dribbble</a></li>
-                                       </ul>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
+            <!-- copyright area start -->
+            <div class="container-fluid">
+              <div class="tp-copyright-wrap">
+                <div class="row align-items-center">
+                  <div class="col-xl-6 col-md-4">
+                    <div class="tp-copyright-logo text-center text-md-start">
+                      <a href="index.html"
+                        ><img src="assets/img/logo/logo-white.png" alt=""
+                      /></a>
+                    </div>
                   </div>
-               </div>
-               <!-- footer area end -->
-
-               <!-- copyright area start -->
-               <div class="container-fluid">
-                  <div class="tp-copyright-wrap">
-                     <div class="row align-items-center">
-                        <div class="col-xl-6 col-md-4">
-                           <div class="tp-copyright-logo text-center text-md-start">
-                              <a href="index.html"><img src="assets/img/logo/logo-white.png" alt=""></a>
-                           </div>
-                        </div>
-                        <div class="col-xl-6 col-md-8">
-                           <div class="tp-copyright-text text-center text-md-end">
-                              <p>Copyright © 2024 Themepure. All rights reserved.</p>
-                           </div>
-                        </div>
-                     </div>
+                  <div class="col-xl-6 col-md-8">
+                    <div class="tp-copyright-text text-center text-md-end">
+                      <p>Copyright © 2025 Atul. All rights reserved.</p>
+                    </div>
                   </div>
-               </div>
-               <!-- copyright area end -->
-
+                </div>
+              </div>
             </div>
-            <!-- footer area start -->
-
-         </footer>
-
+            <!-- copyright area end -->
+          </div>
+          <!-- footer area start -->
+        </footer>
       </div>
-   </div>
+    </div>
 
+    <!---------------------It mine Javascript ---------------------------->
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
+    <script src="./newHomePage.js"></script>
+    <!---------------------It mine Javascript ---------------------------->
 
-<!---------------------It mine Javascript ---------------------------->
-<script src="https://unpkg.com/split-type"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- JS here -->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/bootstrap-bundle.js"></script>
 
-<script src="./newHomePage.js"></script>
-<!---------------------It mine Javascript ---------------------------->
+    <script src="assets/js/gsap.js"></script>
+    <script src="assets/js/gsap-scroll-to-plugin.js"></script>
+    <script src="assets/js/gsap-scroll-smoother.js"></script>
+    <script src="assets/js/gsap-scroll-trigger.js"></script>
+    <script src="assets/js/gsap-split-text.js"></script>
+    <script src="assets/js/chroma.min.js"></script>
 
-   <!-- JS here -->
-   <script src="assets/js/vendor/jquery.js"></script>
-   <script src="assets/js/bootstrap-bundle.js"></script>
+    <script src="assets/js/three.js"></script>
+    <script src="assets/js/tween-max.js"></script>
+    <script src="assets/js/scroll-magic.js"></script>
 
-   <script src="assets/js/gsap.js"></script>
-   <script src="assets/js/gsap-scroll-to-plugin.js"></script>
-   <script src="assets/js/gsap-scroll-smoother.js"></script>
-   <script src="assets/js/gsap-scroll-trigger.js"></script>
-   <script src="assets/js/gsap-split-text.js"></script>
-   <script src="assets/js/chroma.min.js"></script>
-
-   <script src='assets/js/three.js'></script>
-   <script src='assets/js/tween-max.js'></script>
-   <script src='assets/js/scroll-magic.js'></script>
-
-   <script src="assets/js/range-slider.js"></script>
-   <script src="assets/js/swiper-bundle.js"></script>
-   <script src="assets/js/slick.js"></script>
-   <script src="assets/js/magnific-popup.js"></script>
-   <script src="assets/js/nice-select.js"></script>
-   <script src="assets/js/purecounter.js"></script>
-   <script src="assets/js/beforeafter.js"></script>
-   <script src="assets/js/isotope-pkgd.js"></script>
-   <script src="assets/js/imagesloaded-pkgd.js"></script>
-   <script src="assets/js/ajax-form.js"></script>
-   <script src="assets/js/webgl.js"></script>
-   <script src="assets/js/main.js"></script>
-   <script src="assets/js/tp-cursor.js"></script>
-
-   
-
-
-</body>
-
-
-<!-- Mirrored from html.hixstudio.net/liko-prev/liko/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Feb 2025 08:28:06 GMT -->
-
+    <script src="assets/js/range-slider.js"></script>
+    <script src="assets/js/swiper-bundle.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/magnific-popup.js"></script>
+    <script src="assets/js/nice-select.js"></script>
+    <script src="assets/js/purecounter.js"></script>
+    <script src="assets/js/beforeafter.js"></script>
+    <script src="assets/js/isotope-pkgd.js"></script>
+    <script src="assets/js/imagesloaded-pkgd.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/webgl.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/tp-cursor.js"></script>
+  </body>
 </html>
